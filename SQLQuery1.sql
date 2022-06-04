@@ -11,3 +11,10 @@ insert into Employee_payroll(Name, Salary, StartDate) values ('Lavanya','50000',
 insert into Employee_payroll(Name, Salary, StartDate) values ('Mahesh','60000','27/08/2021')
 insert into Employee_payroll(Name, Salary, StartDate) values ('Vivek','35000','26/08/2021')
 insert into Employee_payroll(Name, Salary, StartDate) values ('Priya','25000','26/08/2021')
+
+/* UC4 retrieve all the employee payroll data */
+select * from Employee_payroll
+
+/*UC5 retrieve salary data on a condition */
+SELECT Salary,Name FROM Employee_payroll WHERE Name = 'Priya'
+Select Salary,Name from Employee_payroll where StartDate between ('25/08/2021') and ('26/08/2021')
