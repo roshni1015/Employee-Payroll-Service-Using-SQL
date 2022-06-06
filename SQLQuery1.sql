@@ -18,3 +18,8 @@ select * from Employee_payroll
 /*UC5 retrieve salary data on a condition */
 SELECT Salary,Name FROM Employee_payroll WHERE Name = 'Priya'
 Select Salary,Name from Employee_payroll where StartDate between ('25/08/2021') and ('26/08/2021')
+
+/* UC6 add Gender to Employee Payroll Table and Update the Rows */
+ALTER TABLE Employee_payroll ADD Gender varchar(6);
+UPDATE Employee_payroll set Gender = 'M' where  Name='Mahesh' or Name = 'Vivek' 
+UPDATE Employee_payroll set Gender = 'F' where  Name='Roshni' or Name = 'Lavanya' or Name = 'Priya'
