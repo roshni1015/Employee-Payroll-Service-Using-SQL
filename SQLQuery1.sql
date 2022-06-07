@@ -42,3 +42,18 @@ Select COUNT(Salary) From Employee_payroll Where Gender='F' Group by Gender
 
 /* UC8 extend employee_payroll data and save more details */
 ALTER TABLE Employee_payroll ADD Phone varchar(20), Address varchar(100) DEFAULT 'Empty' WITH VALUES, Department varchar(40) NOT NULL DEFAULT 'Developer';
+
+/* UC9 extend employee_payroll table to have Basic Pay, Deductions, Taxable Pay, Income Tax, Net Pay*/
+ALTER TABLE employee_payroll ADD BasicPay Float Not Null default 0; 
+ALTER TABLE employee_payroll ADD Deductions Float Not Null default 0; 
+ALTER TABLE employee_payroll ADD TaxablePay Float Not Null default 0;
+ALTER TABLE employee_payroll ADD IncomeTax Float Not Null default 0;
+ALTER TABLE employee_payroll ADD NetPay Float Not Null default 0;
+
+select * from Employee_payroll
+
+UPDATE Employee_payroll set BasicPay=30000.50 where Name='Roshni';
+UPDATE Employee_payroll set BasicPay=40000 where Name='Lavanya';
+UPDATE Employee_payroll set BasicPay=50000 where Name='Mahesh';
+UPDATE Employee_payroll set BasicPay=25000 where Name='Vivek';
+UPDATE Employee_payroll set BasicPay=15000.75 where Name='Priya';
