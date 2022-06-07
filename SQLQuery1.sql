@@ -39,3 +39,7 @@ Select MAX(Salary) From Employee_payroll Where Gender='F' Group by Gender
 
 Select COUNT(Salary) From Employee_payroll Where Gender='M' Group by Gender
 Select COUNT(Salary) From Employee_payroll Where Gender='F' Group by Gender
+
+/* UC8 extend employee_payroll data and save more details */
+ALTER TABLE Employee_payroll ADD Phone varchar(16), Address varchar(32) DEFAULT 'Empty' WITH VALUES, Department varchar(16) NOT NULL DEFAULT 'Developer';
+
