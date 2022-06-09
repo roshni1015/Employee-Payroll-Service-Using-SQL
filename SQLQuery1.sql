@@ -73,3 +73,11 @@ UPDATE Employee_payroll set BasicPay=40000 where Name='Lavanya';
 UPDATE Employee_payroll set BasicPay=50000 where Name='Mahesh';
 UPDATE Employee_payroll set BasicPay=25000 where Name='Vivek';
 UPDATE Employee_payroll set BasicPay=15000.75 where Name='Priya';
+
+/* UC10 Insert all values to the table */
+Insert into employee_payroll Values ('Terisa','26/08/2021','F','9876543276','Mumbai','Sales',25000,2000,1000,1000,15000);
+Insert into employee_payroll Values ('Terisa','27/08/2021','F','9234567897','Mumbai','Marketing',30000,1500,1000,1000,20000);
+
+
+
+
