@@ -137,9 +137,9 @@ Insert Into Company Values (4,'Wipro');
 Select* from Company
 
 Insert Into Employees Values (1, 'Terisa',4,'9988776655','Mumbai', 'F');
-Insert Into Employees Values (2, 'Roshni',1,'7744553366','Pune','M');
-Insert Into Employees Values (3, 'Terisa',4,'9988776655','Mumbai','M' );
-Insert Into Employees Values (4, 'Mahesh',2,'8877665544','Chennai', 'F');
+Insert Into Employees Values (2, 'Roshni',1,'7744553366','Pune','F');
+Insert Into Employees Values (3, 'Terisa',4,'9988776655','Mumbai','F' );
+Insert Into Employees Values (4, 'Mahesh',2,'8877665544','Chennai', 'M');
 Insert Into Employees Values (5, 'Lavanya',3,'9587643245','Banglore', 'F');
 Select* from Employees
 
